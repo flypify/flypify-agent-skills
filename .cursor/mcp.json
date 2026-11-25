@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "flypify": {
+      "url": "https://api.flypify.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${env:FLYPIFY_API_KEY}"
+      }
+    }
+  }
+}

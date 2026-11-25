@@ -1,0 +1,13 @@
+---
+description: Flypify agent skills - where the skill lives, money rules, workspace memory
+alwaysApply: true
+---
+
+# Flypify agent skills
+
+- For any product research, store, page, listicle, ad or campaign task, follow `skills/flypify/SKILL.md` (copy at `.cursor/skills/flypify/`). Open the companion file for the step you are on: `stores.md`, `listicles.md`, `statics.md`, `brand-spy.md`.
+- Read `MASTER_CONTEXT.md` first in every session; write defaults you learn and a dated Changelog line back. If it is missing, copy `MASTER_CONTEXT.template.md`.
+- The `flypify` MCP server is in `.cursor/mcp.json` and reads `${env:FLYPIFY_API_KEY}`. Export the key from `.env` in the shell that starts Cursor. If `.env` is missing, the human runs `./scripts/setup.sh` (or `scripts\setup.ps1` on Windows).
+- Quote every credit or ad spend with the number and wait for a yes. Nothing goes live without a yes. Agent launches need the Scale plan; otherwise build the draft and the human launches it in the Flypify app.
+- Append one JSONL line per paid call to `logs/flypify-calls.jsonl` (see `logs/README.md`).
+- Never print the API key. Full rules: `AGENTS.md`.

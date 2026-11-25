@@ -1,0 +1,27 @@
+# Secrets and personal workspace data
+.env
+.env.*
+!.env.example
+MASTER_CONTEXT.md
+
+# Generated copies of skills/ (run scripts/sync-skill.sh)
+.claude/skills/
+.claude/settings.local.json
+.claude/worktrees/
+.cursor/skills/
+.claude/agents/flypify-*.md
+.flypify-mode
+
+# Your call log and anything the agent makes
+logs/*.jsonl
+outputs/
+output/
+
+# Your reference files stay on your machine
+references/*
+!references/README.md
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
