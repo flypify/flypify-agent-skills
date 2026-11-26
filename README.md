@@ -103,7 +103,7 @@ The first time your agent connects, it asks how you want to run Flypify:
 | Static Ad Studio | concept brief, product hero shot, price quote, render batch |
 | Video Ad Studio | format picker, hook and script, clip quote, render check |
 | Meta Campaigns | pixel check, audience reach, launch preview, launch to Meta |
-| Split Tests & Variants | variant builder, offer tests, results reader, winner picker |
+| Split Tests & Variants | variant builder, price tests (judged on revenue per visitor), results reader, winner picker |
 | Store Insights | sales reader, traffic check, page revisions, webhook alerts |
 
 In Claude Code, Codex or Cursor, `./scripts/team.sh` (PowerShell `scripts	eam.ps1`) installs them: Claude Code gets ten `flypify-*` subagents, Codex and Cursor get them as skills. In ChatGPT, Grok, Claude.ai, Perplexity or Muse each specialist becomes its own project or agent: [`setup/agent-team.md`](setup/agent-team.md). The lead hands work out, passes short handoffs between specialists, and is the only one that asks you for a yes. `./scripts/team.sh --remove` goes back to one agent.
